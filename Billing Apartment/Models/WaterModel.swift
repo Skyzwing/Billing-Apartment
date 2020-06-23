@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+struct WaterModel {
+    
+    var oldUnit: Double
+    var newUnit: Double
+    var price: Double
+}

@@ -10,7 +10,32 @@ import SwiftUI
 
 struct ItemDetailView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        NavigationView {
+            List {
+                ForEach (0..<20) { _ in
+                    Text("@")
+                }
+            }.navigationBarTitle("@")
+        }
+//        VStack {
+//            HStack {
+//                Text("Rental name").foregroundColor(.blue).bold()
+//                Spacer()
+//                Text("Surachet Yaitammasan")
+//                }
+//            HStack {
+//                Text("Start Date").foregroundColor(.blue).bold()
+//                Spacer()
+//                Text("31/01/2020")
+//            }
+//            HStack {
+//                Text("Exp").foregroundColor(.blue)
+//                Spacer()
+//                Text("31/01/2021")
+//            }
+//            Spacer()
+//        }
     }
 }
 

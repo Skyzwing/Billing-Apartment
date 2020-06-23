@@ -10,38 +10,37 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @State var count = 1
+    @State var showModal: Bool = false
+    
     var body: some View {
         NavigationView {
             ZStack {
-                Color(hex: "#EFEFEF").edgesIgnoringSafeArea(.all)
+                Color(hex: "#EFEFEF").edgesIgnoringSafeArea(.bottom)
                 VStack {
-                    RoomNotRegisterView()
-                }.navigationBarTitle("Billing Apartment").navigationBarColor(UIColor(hexString: "#ffffff")).navigationBarItems(trailing: Button(action: {
-                    print("push")
-                }) {
-                    Image(systemName: "plus").foregroundColor(.blue)
-                })
-//                VStack {
-////                    RoomNotRegisterView()
-//                    List {
-//                        ForEach(0 ..< 15) { _ in
-//                            HStack {
-//                                VStack(alignment: .leading) {
-//                                    Text("Room 1").padding(.top, 20)
-//                                    Text("Surachet Yaitammasan").font(.footnote).padding(.bottom, 5)
-//                                }
-//                                Spacer()
-//                                Text("5123 Bath").font(.footnote)
-//                            }
-//                        }
-//                    }.padding(.top, -25).listStyle(GroupedListStyle())
-//                    Spacer()
-//                }.navigationBarTitle("Billing Aparment").navigationBarItems(trailing: Button(action: {
-//                    print("A")
-//                }) {
-//                    Text("S")
-//                }).navigationBarColor(UIColor(hexString: "#ffffff"))
+                    if self.count != 0 {
+                        List {
+                            ForEach(0 ..< self.count) { _ in
+                                ItemRowView()
+                            }
+                        }
+                    } else {
+                        Text("Please register your room")
+                    }
+                }.navigationBarTitle("Billing Apartment")
+                    .navigationBarItems(trailing:
+                        Button(action: {
+                            self.count += 1
+                            self.showModal.toggle()
+                            print(self.count)
+                        }) {
+                            Image(systemName: "plus")
+                                .font(Font.system(.title)).foregroundColor(.blue)
+                        }
+                )
             }
+        }.sheet(isPresented: $showModal) {
+            AddRoomView(dismiss: self.$showModal)
         }
     }
 }

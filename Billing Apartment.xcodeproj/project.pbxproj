@@ -10,6 +10,8 @@
 		1C7A24CF039ABB7F48196D7B /* Pods_Billing_ApartmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFD6C63D95E7D63D5C599F6 /* Pods_Billing_ApartmentTests.framework */; };
 		58378632FA9EAC7828CBABE0 /* Pods_Billing_Apartment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4365A35BB2CC97284E6E8C /* Pods_Billing_Apartment.framework */; };
 		A92AF59F462A70D7E65CF6EF /* Pods_Billing_Apartment_Billing_ApartmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD05155A3AA716EAEFBEB0F /* Pods_Billing_Apartment_Billing_ApartmentUITests.framework */; };
+		BD006EB0248ABD3500FF93DE /* AddRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD006EAF248ABD3500FF93DE /* AddRoomView.swift */; };
+		BD070205247441130030C32B /* ApartmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD070204247441130030C32B /* ApartmentModel.swift */; };
 		BD12CFCA246C8F0000F7AF55 /* FBUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD12CFC6246C8EFC00F7AF55 /* FBUser.swift */; };
 		BD12CFCB246C8F0000F7AF55 /* FBFireStoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD12CFC7246C8EFD00F7AF55 /* FBFireStoreError.swift */; };
 		BD12CFCC246C8F0000F7AF55 /* FBFireStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD12CFC8246C8EFF00F7AF55 /* FBFireStore.swift */; };
@@ -35,13 +37,17 @@
 		BD5DF1842456BEEE00B9149F /* Mail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5DF1832456BEEE00B9149F /* Mail.swift */; };
 		BD5DF19024570A3700B9149F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5DF18F24570A3700B9149F /* SignInView.swift */; };
 		BD5DF1942458458100B9149F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD5DF1932458458100B9149F /* GoogleService-Info.plist */; };
-		BD8AC707246FF9EB007F6736 /* RoomNotRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8AC706246FF9EB007F6736 /* RoomNotRegisterView.swift */; };
 		BD940C85245C74680049CB9D /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD940C84245C74680049CB9D /* RegisterViewModel.swift */; };
 		BD940C88245DC2090049CB9D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD940C87245DC2090049CB9D /* ImagePicker.swift */; };
 		BD940C8A245DC6990049CB9D /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD940C89245DC6990049CB9D /* PhotoCaptureView.swift */; };
 		BD9B737C245A86A200E8425F /* SessionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9B737B245A86A200E8425F /* SessionInfo.swift */; };
 		BD9B737F245A8DFC00E8425F /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9B737E245A8DFC00E8425F /* UsersViewModel.swift */; };
+		BD9D8F9B248C6BDF00CF7C64 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9D8F9A248C6BDF00CF7C64 /* ItemRowView.swift */; };
+		BD9D8F9D248C6C2500CF7C64 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9D8F9C248C6C2500CF7C64 /* ItemDetailView.swift */; };
 		BDB3880F246B20DF000B3245 /* EnumBoolean.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3880E246B20DF000B3245 /* EnumBoolean.swift */; };
+		BDD2B0C524745D22007E4D92 /* RoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD2B0C424745D22007E4D92 /* RoomModel.swift */; };
+		BDD2B0C724745E5D007E4D92 /* ElectricModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD2B0C624745E5D007E4D92 /* ElectricModel.swift */; };
+		BDD2B0C924745E68007E4D92 /* WaterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD2B0C824745E68007E4D92 /* WaterModel.swift */; };
 		BDE91141246F2FDB009B7F73 /* ChargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE91140246F2FDB009B7F73 /* ChargeView.swift */; };
 		BDEBAD6924708BF000B27558 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEBAD6824708BF000B27558 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -70,6 +76,8 @@
 		547DF7D760DDD93B438F9005 /* Pods-Billing ApartmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Billing ApartmentTests.debug.xcconfig"; path = "Target Support Files/Pods-Billing ApartmentTests/Pods-Billing ApartmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		886389C1C47FD36311766368 /* Pods-Billing Apartment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Billing Apartment.release.xcconfig"; path = "Target Support Files/Pods-Billing Apartment/Pods-Billing Apartment.release.xcconfig"; sourceTree = "<group>"; };
 		BBD05155A3AA716EAEFBEB0F /* Pods_Billing_Apartment_Billing_ApartmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Billing_Apartment_Billing_ApartmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD006EAF248ABD3500FF93DE /* AddRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoomView.swift; sourceTree = "<group>"; };
+		BD070204247441130030C32B /* ApartmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentModel.swift; sourceTree = "<group>"; };
 		BD12CFC6246C8EFC00F7AF55 /* FBUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBUser.swift; sourceTree = "<group>"; };
 		BD12CFC7246C8EFD00F7AF55 /* FBFireStoreError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBFireStoreError.swift; sourceTree = "<group>"; };
 		BD12CFC8246C8EFF00F7AF55 /* FBFireStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBFireStore.swift; sourceTree = "<group>"; };
@@ -101,13 +109,17 @@
 		BD5DF1832456BEEE00B9149F /* Mail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mail.swift; sourceTree = "<group>"; };
 		BD5DF18F24570A3700B9149F /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		BD5DF1932458458100B9149F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		BD8AC706246FF9EB007F6736 /* RoomNotRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomNotRegisterView.swift; sourceTree = "<group>"; };
 		BD940C84245C74680049CB9D /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		BD940C87245DC2090049CB9D /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		BD940C89245DC6990049CB9D /* PhotoCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureView.swift; sourceTree = "<group>"; };
 		BD9B737B245A86A200E8425F /* SessionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionInfo.swift; sourceTree = "<group>"; };
 		BD9B737E245A8DFC00E8425F /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		BD9D8F9A248C6BDF00CF7C64 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
+		BD9D8F9C248C6C2500CF7C64 /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
 		BDB3880E246B20DF000B3245 /* EnumBoolean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumBoolean.swift; sourceTree = "<group>"; };
+		BDD2B0C424745D22007E4D92 /* RoomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomModel.swift; sourceTree = "<group>"; };
+		BDD2B0C624745E5D007E4D92 /* ElectricModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricModel.swift; sourceTree = "<group>"; };
+		BDD2B0C824745E68007E4D92 /* WaterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterModel.swift; sourceTree = "<group>"; };
 		BDE91140246F2FDB009B7F73 /* ChargeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeView.swift; sourceTree = "<group>"; };
 		BDEBAD6824708BF000B27558 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CDC39C70F21BAACBEBDF6372 /* Pods-Billing Apartment-Billing ApartmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Billing Apartment-Billing ApartmentUITests.release.xcconfig"; path = "Target Support Files/Pods-Billing Apartment-Billing ApartmentUITests/Pods-Billing Apartment-Billing ApartmentUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -250,6 +262,10 @@
 			isa = PBXGroup;
 			children = (
 				BD4DDC242459D45100919F2C /* UserModel.swift */,
+				BD070204247441130030C32B /* ApartmentModel.swift */,
+				BDD2B0C424745D22007E4D92 /* RoomModel.swift */,
+				BDD2B0C624745E5D007E4D92 /* ElectricModel.swift */,
+				BDD2B0C824745E68007E4D92 /* WaterModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -300,7 +316,9 @@
 			isa = PBXGroup;
 			children = (
 				BD940C89245DC6990049CB9D /* PhotoCaptureView.swift */,
-				BD8AC706246FF9EB007F6736 /* RoomNotRegisterView.swift */,
+				BD006EAF248ABD3500FF93DE /* AddRoomView.swift */,
+				BD9D8F9A248C6BDF00CF7C64 /* ItemRowView.swift */,
+				BD9D8F9C248C6C2500CF7C64 /* ItemDetailView.swift */,
 			);
 			path = "Support View";
 			sourceTree = "<group>";
@@ -560,10 +578,14 @@
 			files = (
 				BD5DF1842456BEEE00B9149F /* Mail.swift in Sources */,
 				BDE91141246F2FDB009B7F73 /* ChargeView.swift in Sources */,
+				BD006EB0248ABD3500FF93DE /* AddRoomView.swift in Sources */,
+				BDD2B0C524745D22007E4D92 /* RoomModel.swift in Sources */,
 				BD940C8A245DC6990049CB9D /* PhotoCaptureView.swift in Sources */,
 				BDB3880F246B20DF000B3245 /* EnumBoolean.swift in Sources */,
 				BD12CFD1246C92D800F7AF55 /* FBAuth.swift in Sources */,
 				BD12CFCD246C8F0000F7AF55 /* FBKeys.swift in Sources */,
+				BD9D8F9D248C6C2500CF7C64 /* ItemDetailView.swift in Sources */,
+				BD9D8F9B248C6BDF00CF7C64 /* ItemRowView.swift in Sources */,
 				BD3677DD2452F6DA008B2D54 /* AppDelegate.swift in Sources */,
 				BD940C88245DC2090049CB9D /* ImagePicker.swift in Sources */,
 				BD5DF17F245475AF00B9149F /* RegisterView.swift in Sources */,
@@ -571,6 +593,7 @@
 				BD4B6096245367F700AEF8A5 /* AppView.swift in Sources */,
 				BD3677E12452F6DA008B2D54 /* ContentView.swift in Sources */,
 				BD5DF17A24542BE600B9149F /* MeView.swift in Sources */,
+				BD070205247441130030C32B /* ApartmentModel.swift in Sources */,
 				BD12CFCC246C8F0000F7AF55 /* FBFireStore.swift in Sources */,
 				BDEBAD6924708BF000B27558 /* HomeViewModel.swift in Sources */,
 				BD9B737C245A86A200E8425F /* SessionInfo.swift in Sources */,
@@ -580,12 +603,13 @@
 				BD4DDC252459D45100919F2C /* UserModel.swift in Sources */,
 				BD367811245351F0008B2D54 /* HomeView.swift in Sources */,
 				BD12CFD0246C92D800F7AF55 /* FBAuthError.swift in Sources */,
-				BD8AC707246FF9EB007F6736 /* RoomNotRegisterView.swift in Sources */,
+				BDD2B0C724745E5D007E4D92 /* ElectricModel.swift in Sources */,
 				BD36780D2452F900008B2D54 /* Utillities.swift in Sources */,
 				BD5DF17C245459A400B9149F /* ForgotPasswordView.swift in Sources */,
 				BD9B737F245A8DFC00E8425F /* UsersViewModel.swift in Sources */,
 				BD4B609824536E8200AEF8A5 /* CustomTabView.swift in Sources */,
 				BD5DF19024570A3700B9149F /* SignInView.swift in Sources */,
+				BDD2B0C924745E68007E4D92 /* WaterModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

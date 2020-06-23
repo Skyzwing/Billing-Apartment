@@ -13,11 +13,7 @@ struct ChargeView: View {
         NavigationView {
             VStack {
                 Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-            }.navigationBarItems(trailing: Button(action: {
-                print("a")
-            }) {
-                Text("S")
-            })
+            }.navigationBarTitle(Text("Billing"))
         }
     }
 }

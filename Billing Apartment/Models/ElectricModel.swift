@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+struct ElectricModel {
+    
+    var oldUnit: Double
+    var newUnit: Double
+    var price: Double
+}

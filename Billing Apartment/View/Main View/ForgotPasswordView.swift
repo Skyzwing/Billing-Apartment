@@ -16,7 +16,7 @@ struct ForgotPasswordView: View {
         self.presentationMode.wrappedValue.dismiss()
     }) {
         HStack {
-            Image("back").resizable().frame(width: 42, height: 42).foregroundColor(.white)
+            Image("back-forgot").resizable().frame(width: 42, height: 42).foregroundColor(Color(hex: "#17b3c1"))
         }
         }
     }

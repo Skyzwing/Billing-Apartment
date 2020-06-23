@@ -10,7 +10,16 @@ import SwiftUI
 
 struct ItemRowView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationLink(destination: ItemDetailView()) {
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("Room 1").padding(.top, 20)
+                    Text("Surachet Yaitammasan").font(.footnote).padding(.bottom, 5)
+                }
+                Spacer()
+                Text("5123 Bath").font(.footnote)
+            }
+        }
     }
 }
 

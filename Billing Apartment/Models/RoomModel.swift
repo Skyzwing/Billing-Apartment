@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+struct RoomModel: Identifiable {
+    
+    var id: String
+    var roomName: String
+    var rentalName: String
+    var startRent: Data
+    var endRent: Date
+    var electricUnit: ElectricModel
+    var waterUnit: WaterModel
+    var price: Double
+    
+}
