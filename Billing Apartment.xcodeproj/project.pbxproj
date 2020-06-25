@@ -11,7 +11,6 @@
 		58378632FA9EAC7828CBABE0 /* Pods_Billing_Apartment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4365A35BB2CC97284E6E8C /* Pods_Billing_Apartment.framework */; };
 		A92AF59F462A70D7E65CF6EF /* Pods_Billing_Apartment_Billing_ApartmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD05155A3AA716EAEFBEB0F /* Pods_Billing_Apartment_Billing_ApartmentUITests.framework */; };
 		BD006EB0248ABD3500FF93DE /* AddRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD006EAF248ABD3500FF93DE /* AddRoomView.swift */; };
-		BD070205247441130030C32B /* ApartmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD070204247441130030C32B /* ApartmentModel.swift */; };
 		BD12CFCA246C8F0000F7AF55 /* FBUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD12CFC6246C8EFC00F7AF55 /* FBUser.swift */; };
 		BD12CFCB246C8F0000F7AF55 /* FBFireStoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD12CFC7246C8EFD00F7AF55 /* FBFireStoreError.swift */; };
 		BD12CFCC246C8F0000F7AF55 /* FBFireStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD12CFC8246C8EFF00F7AF55 /* FBFireStore.swift */; };
@@ -77,7 +76,6 @@
 		886389C1C47FD36311766368 /* Pods-Billing Apartment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Billing Apartment.release.xcconfig"; path = "Target Support Files/Pods-Billing Apartment/Pods-Billing Apartment.release.xcconfig"; sourceTree = "<group>"; };
 		BBD05155A3AA716EAEFBEB0F /* Pods_Billing_Apartment_Billing_ApartmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Billing_Apartment_Billing_ApartmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD006EAF248ABD3500FF93DE /* AddRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoomView.swift; sourceTree = "<group>"; };
-		BD070204247441130030C32B /* ApartmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentModel.swift; sourceTree = "<group>"; };
 		BD12CFC6246C8EFC00F7AF55 /* FBUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBUser.swift; sourceTree = "<group>"; };
 		BD12CFC7246C8EFD00F7AF55 /* FBFireStoreError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBFireStoreError.swift; sourceTree = "<group>"; };
 		BD12CFC8246C8EFF00F7AF55 /* FBFireStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBFireStore.swift; sourceTree = "<group>"; };
@@ -262,7 +260,6 @@
 			isa = PBXGroup;
 			children = (
 				BD4DDC242459D45100919F2C /* UserModel.swift */,
-				BD070204247441130030C32B /* ApartmentModel.swift */,
 				BDD2B0C424745D22007E4D92 /* RoomModel.swift */,
 				BDD2B0C624745E5D007E4D92 /* ElectricModel.swift */,
 				BDD2B0C824745E68007E4D92 /* WaterModel.swift */,
@@ -593,7 +590,6 @@
 				BD4B6096245367F700AEF8A5 /* AppView.swift in Sources */,
 				BD3677E12452F6DA008B2D54 /* ContentView.swift in Sources */,
 				BD5DF17A24542BE600B9149F /* MeView.swift in Sources */,
-				BD070205247441130030C32B /* ApartmentModel.swift in Sources */,
 				BD12CFCC246C8F0000F7AF55 /* FBFireStore.swift in Sources */,
 				BDEBAD6924708BF000B27558 /* HomeViewModel.swift in Sources */,
 				BD9B737C245A86A200E8425F /* SessionInfo.swift in Sources */,

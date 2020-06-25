@@ -10,8 +10,10 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @State var count = 1
+    @State var items: [RoomModel] = []
+    @State var count = 0
     @State var showModal: Bool = false
+    var homeViewModel = HomeViewModel()
     
     var body: some View {
         NavigationView {
@@ -20,7 +22,7 @@ struct HomeView: View {
                 VStack {
                     if self.count != 0 {
                         List {
-                            ForEach(0 ..< self.count) { _ in
+                            ForEach(items) { _ in
                                 ItemRowView()
                             }
                         }
@@ -28,20 +30,25 @@ struct HomeView: View {
                         Text("Please register your room")
                     }
                 }.navigationBarTitle("Billing Apartment")
-                    .navigationBarItems(trailing:
-                        Button(action: {
-                            self.count += 1
-                            self.showModal.toggle()
-                            print(self.count)
-                        }) {
-                            Image(systemName: "plus")
-                                .font(Font.system(.title)).foregroundColor(.blue)
-                        }
-                )
+                    .navigationBarItems(trailing: addRoomButton)
             }
         }.sheet(isPresented: $showModal) {
             AddRoomView(dismiss: self.$showModal)
         }
+    }
+    
+    var addRoomButton: some View {
+        AnyView(Button(action: onAdd) {
+            Image(systemName: "plus")
+                .font(Font.system(.title)).foregroundColor(.blue)
+        })
+    }
+    
+    func onAdd() {
+        homeViewModel.getUID()
+        self.count += 1
+        items.append(RoomModel(id: "o", userID: "123", roomName: "12313", rentalName: "ssss", startRent: "2", endRent: "3", electricUnit: "4", waterUnit: "1", price: 12.00))
+        print(items)
     }
 }
 

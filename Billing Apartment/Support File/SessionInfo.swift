@@ -14,6 +14,8 @@ class SessionInfo: ObservableObject {
         case undefined, signIn, signOut
     }
     
+    var uuid = "."
+    
     @Published var isUserAuthentication: AuthenticationState = .undefined
     @Published var user: FBUser = .init(uid: "", apartmentName: "", email: "", phoneNumber: "")
     
@@ -26,11 +28,14 @@ class SessionInfo: ObservableObject {
                 return
             }
             self.isUserAuthentication = .signIn
-            FBFirestore.retrieveFBUser(uid: user.uid) { result in
+            FBFirestore. retrieveFBUser(uid: user.uid) { result in
                 switch result {
                 case .failure(let error):
                     print(error.localizedDescription)
                 case .success(let user):
+                    self.uuid = user.uid
+                    print(user.uid)
+                    print(self.uuid)
                     self.user = user
                 }
             }

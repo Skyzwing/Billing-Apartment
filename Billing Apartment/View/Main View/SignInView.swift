@@ -50,7 +50,6 @@ struct SignInView: View {
                         }
                         })
                 }
-                
                 NavigationLink(destination: ForgotPasswordView()) {
                     Text("Forgot password?").foregroundColor(Color(hex: "#2794EB"))
                 }.padding(.top, 30)

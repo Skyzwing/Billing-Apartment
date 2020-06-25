@@ -10,13 +10,14 @@ import Foundation
 
 struct RoomModel: Identifiable {
     
-    var id: String
-    var roomName: String
-    var rentalName: String
-    var startRent: Data
-    var endRent: Date
-    var electricUnit: ElectricModel
-    var waterUnit: WaterModel
-    var price: Double
+    let id: String
+    let userID: String
+    let roomName: String
+    let rentalName: String
+    let startRent: String
+    let endRent: String
+    let electricUnit: String
+    let waterUnit: String
+    let price: Double
     
 }

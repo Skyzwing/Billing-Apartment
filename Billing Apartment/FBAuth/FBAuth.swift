@@ -8,13 +8,9 @@
 
 import SwiftUI
 import FirebaseAuth
-import CryptoKit
-import AuthenticationServices
-
-// This typeAlias is defined just to make it simpler to deal with the tuble used in the SignInWithApple handle function once signed in.
-typealias SignInWithAppleResult = (authDataResult: AuthDataResult, appleIDCredential: ASAuthorizationAppleIDCredential)
 
 struct FBAuth {
+    
     // MARK: - Sign In with Email functions
     
     static func resetPassword(email:String, resetCompletion:@escaping (Result<Bool,Error>) -> Void) {

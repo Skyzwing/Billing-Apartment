@@ -11,11 +11,12 @@ enum FBKeys {
     
     enum CollectionPath {
         static let users = "users"
+        static let roomDetail = "room detail"
     }
     
     enum User {
         static let uid = "uid"
-        static let apartmentName = "name"
+        static let apartmentName = "apartment name"
         static let email = "email"
         static let phoneNumber = "phone number"
         
