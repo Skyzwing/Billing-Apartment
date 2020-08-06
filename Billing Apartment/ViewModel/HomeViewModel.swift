@@ -7,6 +7,7 @@
 //
 
 import FirebaseFirestore
+import FirebaseAuth
 import SwiftUI
 import Combine
 
@@ -14,10 +15,11 @@ class HomeViewModel {
     
     private var database = Firestore.firestore().collection("apartments")
     let db = Firestore.firestore()
+//    let auth = Firebase
     
     var session: SessionInfo = .init()
     
-    func getUID() {
-        print(session.uuid)
-    }
+//    func getUID() {
+//        print(auth.creden)
+//    }
 }

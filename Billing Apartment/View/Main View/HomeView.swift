@@ -45,7 +45,7 @@ struct HomeView: View {
     }
     
     func onAdd() {
-        homeViewModel.getUID()
+//        homeViewModel.getUID()
         self.count += 1
         items.append(RoomModel(id: "o", userID: "123", roomName: "12313", rentalName: "ssss", startRent: "2", endRent: "3", electricUnit: "4", waterUnit: "1", price: 12.00))
         print(items)

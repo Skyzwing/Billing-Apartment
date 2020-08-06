@@ -22,6 +22,8 @@ struct FBUser {
         self.email = email
         self.phoneNumber = phoneNumber
     }
+    
+
 
 }
 

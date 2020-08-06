@@ -9,7 +9,7 @@ import FirebaseFirestore
 
 enum FBFirestore {
 
-    static func retrieveFBUser(uid: String, completion: @escaping (Result<FBUser, Error>) -> ()) {
+    static func  retrieveFBUser(uid: String, completion: @escaping (Result<FBUser, Error>) -> ()) {
         let reference = Firestore
             .firestore()
             .collection(FBKeys.CollectionPath.users)
